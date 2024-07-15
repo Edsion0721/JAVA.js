@@ -52,3 +52,4 @@ mintNFT("ved", "Red", "Jacket",    "Platinium Chain");
 mintNFT("soniya", "Yellow", "Bomber jacket", " Silver Chain"); 
 
 listNFTs();
+getTotalSupply();
