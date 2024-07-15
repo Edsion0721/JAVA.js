@@ -15,12 +15,12 @@ const NFTS = [];
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
-function mintNFT (name, hairColor, clothType, bling) {
+function mintNFT (name, hairColor, clothType, Chain) {
     const NFT = {
         "name": name,
         "hairColor": hairColor,
         "clothType": clothType,
-        "bling":bling
+        "Chain":Chain
     }
     NFTS.push(NFT);
     console.log("Minted: " + name);
@@ -34,14 +34,14 @@ function listNFTs () {
         console.log("Name: \t\t" + NFTS[i].name); 
         console.log("Eye : \t" + NFTS[i].hairColor); 
         console.log("Cloth Type: " + NFTS[i].clothType);
-        console.log("Bling \t\t" + NFTS[i].bling);
+        console.log("Chain \t\t" + NFTS[i].Chain);
     }
 }
 
 
 // print the total number of NFTs we have minted to the console
 function getTotalSupply() {
-    console.log("\n" + NFTS.length);
+    console.log("The total number of NFTs we have minted are: " + NFTS.length);
 }
 
 
